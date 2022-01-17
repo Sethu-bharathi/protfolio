@@ -1,5 +1,47 @@
+
+
 #about-me{
-    background-color: black;
-    height:100vh;
-    width:100%;
+    margin-left: 10px;
+    padding: 0 100px;
+    height: 100vh;
+    max-width: 90vw;
+    background-color: #00233B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.heading{
+    color: #d6a007;
+    align-self: flex-start;
+    font-size: 33px;
+}
+.about-mediv{
+    padding:10px;
+   font-size: 22px;
+   color: var(--light-slate);
+}
+.lottie{
+    height: 350px;
+    width: 350px;
+}
+
+
+
+@media screen and (max-width: 767px){
+    #about-me{
+        width: 98%;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        margin: 15px;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    .about-mediv{
+        max-width: 95%;
+        font-size: 19px;
+     }
 }

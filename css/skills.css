@@ -1,10 +1,204 @@
-#skill {
-  height: 100vh;
-  max-width: 100%;
-  margin: 0;
-  background-color: black;
-  display: flex;
+#skills {
+    height: 100vh;
+    width: 100vw;
+    background-color: #00233b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    padding: 0 100px;
+    flex-wrap: wrap;
 }
 
+.heading2 {
+    color: #d6a007;
+    align-self: flex-start;
+    font-size: 33px;
+}
 
+.skill-container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main {
+    width: 500px;
+    height: 350px;
+    background-color: #00233b;
+    border-radius: 10px;
+    border-width: 2px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.main>* {
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.theSmiley {
+    align-self: center;
+    justify-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.items2 {
+    animation: spinAroundorbit2 20s linear infinite;
+}
+
+.main .item {
+    z-index: 2;
+}
+
+.main .item img {
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spinAroundorbit1 {
+    from {
+        transform: rotate(0deg) translate(100px);
+    }
+    to {
+        transform: rotate(360deg) translate(100px);
+    }
+}
+
+@keyframes spinAroundorbit2 {
+    from {
+        transform: rotate(0deg) translate(150px);
+    }
+    to {
+        transform: rotate(360deg) translate(150px);
+    }
+}
+
+.orbit1 {
+    height: 150px;
+    width: 150px;
+    border: #d6a007 dotted 2px;
+    position: relative;
+    border-radius: 100%;
+}
+
+.orbit1:after {
+    content: "";
+    top: -45px;
+    right: -45px;
+    height: 230px;
+    width: 230px;
+    border: #d6a007 solid 3px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.orbit1:before {
+    content: "";
+    top: -90px;
+    right: -90px;
+    height: 320px;
+    width: 320px;
+    border: #d6a007 solid 3px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.main {
+    margin-top: 20px;
+    width: 500px;
+    height: 350px;
+    border-color: #eee;
+    border-radius: 10px;
+    border-width: 2px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.skillelement {
+    height:120px;
+    width:120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skillrange {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.skill-name{
+    color: var(--lightest-slate);
+    margin-top: 10px;
+    font-size: 20px;
+}
+.items1 {
+    animation: spinAroundorbit1 20s linear infinite;
+}
+
+@media screen and (max-width: 789px) {
+    #skills {
+        padding-left:10px;
+        padding-right: 0;
+        margin: 0;
+        width: auto;
+        flex-direction: column;
+        
+    }
+    .skill-container{
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+    }
+    .heading2 {
+        padding: 10px 30px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 289px) {
+    #about-me {
+        margin: 0;
+    }
+    .name {
+        font-size: 18px;
+    }
+    .sethu {
+        padding-top: 10px;
+        font-size: 40px;
+    }
+    .job {
+        font-size: 25px;
+    }
+    .skill-container {
+        padding-left: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .skill-bar {
+        width: 90%;
+    }
+}
 

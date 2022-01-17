@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example: Rotation Around a Point</title>
+
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        width: 500px;
+        height: 350px;
+        background-color:rgb(2, 1, 43);
+        border-radius: 10px;
+        border-width: 2px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .main > * {
+        z-index: 1;
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .centersmiley {
+        align-self: center;
+        justify-self: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+      }
+
+      /* .items2 {
+        animation: spinAroundorbit2 20s linear infinite;
+      } */
+
+      .main .item {
+        z-index: 2;
+      }
+
+      .main .item img {
+        border-radius: 50%;
+        animation: rotate 20s linear infinite;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(360deg);
+        }
+        to {
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes spinAroundorbit1 {
+        from {
+          transform: rotate(0deg) translate(100px);
+        }
+        to {
+          transform: rotate(360deg) translate(100px);
+        }
+      }
+
+      @keyframes spinAroundorbit2 {
+        from {
+          transform: rotate(0deg) translate(150px);
+        }
+        to {
+          transform: rotate(360deg) translate(150px);
+        }
+      }
+
+      .orbit1 {
+        height: 150px;
+        width: 150px;
+        border: #d6a007 dotted 2px;
+        position: relative;
+        border-radius: 100%;
+      }
+
+      .orbit1:after {
+        content: "";
+        top: -45px;
+        right: -45px;
+        height: 230px;
+        width: 230px;
+        border: #d6a007 solid 3px;
+        position: absolute;
+        border-radius: 100%;
+      }
+
+      .orbit1:before {
+        content: "";
+        top: -90px;
+        right: -90px;
+        height: 320px;
+        width: 320px;
+        border: #d6a007 solid 3px;
+        position: absolute;
+        border-radius: 100%;
+      }
+
+      .main {
+        margin-top: 20px;
+        width: 500px;
+        height: 350px;
+        border-color: #eee;
+        border-radius: 10px;
+        border-width: 2px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+      }
+
+      
+
+      /* .items1 {
+        animation: spinAroundorbit1 20s linear infinite;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <h1>Rotation Around a Point</h1>
+    <div class="main">
+      <img class="centersmiley" src="https://m.media-amazon.com/images/I/71ZtQnzOU4L._SL1500_.jpg" alt="Sethubharathi" />
+
+      <div class="item items2" style="animation-delay: -6s">
+        <img
+          style="animation-delay: -6s; height: 65px"
+          src="https://imgix.bustle.com/uploads/image/2020/5/11/49197366-afef-4a82-ad40-8005ee2f07da-da0c9321-c21e-418e-a012-0b4b0c8a15e9-shutterstock-1233307138.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress"
+        />
+      </div>
+      <div class="item items2" style="animation-delay: -12s">
+        <img
+          style="animation-delay: -12s; height: 60px"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_I_loKHeZtDeg9KPMS4i16pEWgH6UttprJw&usqp=CAU"
+        />
+      </div>
+      <div class="item items2" style="animation-delay: -18s">
+        <img
+          style="animation-delay: -18s; height: 50px"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS28LG1N7ell_lFQgXuHae33LLeqYdeyzh6zQ&usqp=CAU"
+        />
+      </div>
+      <div class="item items1" style="animation-delay: -4s">
+        <img
+          style="animation-delay: -4s; height: 50px"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKowDxe2Fb6JuJukXQKQISnuenIBIBYAhYog&usqp=CAU"
+        />
+      </div>
+
+      <!-- <div class="orbit1"></div> -->
+    </div>
+  </body>
+</html>
