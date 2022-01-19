@@ -89,16 +89,7 @@
     transform: rotateX(0deg);
   }
 }
-@keyframes fade-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -240,7 +231,7 @@ nav{
   align-items: center;
 }
 .toggle span {
-  width: 25px;
+  width: 26px;
   height: 4px;
   background-color: #d6a007;
   border-radius: 3px;
@@ -285,6 +276,10 @@ nav{
   border-radius: 30px;
   background-color: rgb(219, 222, 240);
 }
+::selection{
+  background-color: var(--dark-navy);
+  color: #64ffda; 
+}
 
 * {
   padding: 0;
@@ -315,7 +310,6 @@ body {
 }
 
 .name {
-  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   margin-bottom: 10px;
   font-family: monospace;
   font-weight: 400;
@@ -350,10 +344,9 @@ body {
 
 .job {
   font-size: 27px;
-  animation: fade-in-top 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.job::after {
+.job:after {
   position: relative;
   content: "|";
   animation: blink 0.8s infinite ease;
@@ -418,7 +411,6 @@ body {
 }
 
 .right-bottom {
-  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.7s both;
   position: relative;
   bottom: 30px;
   left: 50px;
