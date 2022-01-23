@@ -44,3 +44,7 @@ for (let i = 0; i < anav.length; i++) {
     mobilenav.classList.toggle("active");
   })
 }
+let sethu=document.querySelector(".sethu");
+window.addEventListener("scroll",()=>{});
+function gotoSection(id){document.getElementById(id).scrollIntoView()}
+

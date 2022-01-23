@@ -106,16 +106,15 @@
   height: 45px;
 }
 .mobilenavlist {
-  display:none;
+  display: none;
   z-index: 100;
   width: 50%;
   position: absolute;
   top: 80px;
   right: 40px;
-  
 }
 
-nav{
+nav {
   position: fixed;
   height: 70px;
   width: 100%;
@@ -137,27 +136,25 @@ nav{
   right: 20px;
   z-index: 10;
   list-style-type: none;
-  
 }
-.mobilenavlist{
-  position:fixed;
-  top:0;
+.mobilenavlist {
+  position: fixed;
+  top: 0;
   right: 0;
-  
 }
-.mobilenavcontainer.active{
+.mobilenavcontainer.active {
   transform: translateX(0px);
 }
-.mobilenavcontainer{
+.mobilenavcontainer {
   position: absolute;
   transition: 1s;
   transform: translateX(300px);
-  background-color:#042d47;
-  height:50vh;
-  border-radius:  10px 0px 0px 10px;
+  background-color: #042d47;
+  height: 50vh;
+  border-radius: 10px 0px 0px 10px;
   width: 180px;
-  top:70px;
-  right:7px;
+  top: 70px;
+  right: 7px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -165,7 +162,7 @@ nav{
   align-items: center;
   list-style-type: none;
 }
-.mobilenavcontainer > li a{
+.mobilenavcontainer > li p {
   color: var(--lightest-slate);
   font-family: monospace;
   font-weight: 500;
@@ -173,18 +170,18 @@ nav{
   text-decoration: none;
   text-align: center;
 }
-.mobilenavcontainer > li a span{
-  color:#d6a007;
+.mobilenavcontainer > li p span {
+  color: #d6a007;
   font-family: monospace;
 }
-.navcontainer > li{
+.navcontainer > li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
   align-content: center;
 }
-.navcontainer > li a{
+.navcontainer > li p {
   color: var(--lightest-slate);
   display: flex;
   flex-direction: column;
@@ -195,24 +192,24 @@ nav{
   font-family: monospace;
   font-size: 15px;
   text-decoration: none;
-  transition: .6s;
+  transition: 0.6s;
 }
-.navcontainer >li a:after{
+.navcontainer > li p:after {
   align-self: center;
   content: "";
   background-color: var(--lightest-slate);
   height: 2px;
   width: 65px;
   position: relative;
-  top:2px;
-  transition: .6s;
+  top: 2px;
+  transition: 0.6s;
   transform: scaleX(0);
   transform-origin: bottom right;
 }
-.navcontainer >li a:hover:after{
+.navcontainer > li p:hover:after {
   transform: scaleX(1);
 }
-.navcontainer >li a:hover{
+.navcontainer > li p:hover {
   cursor: pointer;
   font-size: 16px;
 }
@@ -220,8 +217,8 @@ nav{
 .toggle {
   overflow: hidden;
   position: fixed;
-  top:20px;
-  right:30px;
+  top: 20px;
+  right: 30px;
   width: 45px;
   height: 40px;
   background-color: #063555;
@@ -276,9 +273,9 @@ nav{
   border-radius: 30px;
   background-color: rgb(219, 222, 240);
 }
-::selection{
+::selection {
   background-color: var(--dark-navy);
-  color: #64ffda; 
+  color: #64ffda;
 }
 
 * {
@@ -324,6 +321,7 @@ body {
   color: #d6a007;
   font-weight: 700;
 }
+
 
 .sethu-picture {
   height: 380px;
@@ -383,13 +381,12 @@ body {
   transition: 0.4s;
   color: #d6a007;
   border: 2px var(--lightest-slate) solid;
-  box-shadow: 2px 2px 8px rgba(0,0,0, 1);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
 }
 
 .hire-me:hover {
   cursor: pointer;
 }
-
 
 .left-section {
   position: relative;
@@ -444,7 +441,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .mobilenavlist{
+  .mobilenavlist {
     display: block;
   }
   .navcontainer {
@@ -492,8 +489,7 @@ body {
     height: 70vh;
   }
   .sethu-picture {
-    height: 280px;
-    width: 280px;
+    width: max(94vw,300px);
   }
   .s {
     left: 200px;

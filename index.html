@@ -71,17 +71,37 @@
           data-aos="fade-down"
         />
         <ul class="navcontainer">
-          <li data-aos="fade-down" data-aos-delay="200" data-aos-duration="400">
-            <a href="#about-me">About Me</a>
+          <li
+            data-aos="fade-down"
+            data-aos-delay="200"
+            data-aos-duration="400"
+            onclick="gotoSection('about-me')"
+          >
+            <p>About Me</p>
           </li>
-          <li data-aos="fade-down" data-aos-delay="300" data-aos-duration="400">
-            <a href="#skills">Skills</a>
+          <li
+            data-aos="fade-down"
+            data-aos-delay="300"
+            data-aos-duration="400"
+            onclick="gotoSection('skills')"
+          >
+            <p>Skills</p>
           </li>
-          <li data-aos="fade-down" data-aos-delay="400" data-aos-duration="400">
-            <a href="#projects">Projects</a>
+          <li
+            data-aos="fade-down"
+            data-aos-delay="400"
+            data-aos-duration="400"
+            onclick="gotoSection('projects')"
+          >
+            <p>Projects</p>
           </li>
-          <li data-aos="fade-down" data-aos-delay="600" data-aos-duration="400">
-            <a href="#contact-me">Contact</a>
+          <li
+            data-aos="fade-down"
+            data-aos-delay="600"
+            data-aos-duration="400"
+            onclick="gotoSection('contact-me')"
+          >
+            <p>Contact</p>
           </li>
         </ul>
       </nav>
@@ -90,17 +110,17 @@
           <span></span>
         </div>
         <ul class="mobilenavcontainer">
-          <li>
-            <a class="anav" href="#about-me"><span>01. </span>About Me</a>
+          <li onclick="gotoSection('about-me')">
+            <p class="anav"><span>01. </span>About Me</p>
           </li>
-          <li>
-            <a class="anav" href="#skills"><span>02. </span>Skills</a>
+          <li onclick="gotoSection('skills')">
+            <p class="anav"><span>02. </span>Skills</p>
           </li>
-          <li>
-            <a class="anav" href="#projects"><span>03. </span>Projects</a>
+          <li onclick="gotoSection('projects')">
+            <p class="anav"><span>03. </span>Projects</p>
           </li>
-          <li>
-            <a class="anav" href="#contact-me"><span>04. </span>Contact</a>
+          <li onclick="gotoSection('contact-me')">
+            <p class="anav"><span>04. </span>Contact</p>
           </li>
         </ul>
       </div>
@@ -115,13 +135,10 @@
             data-aos-delay="800"
             data-aos-duration="500"
           >
-            Hi, I'm<br /><span
-              class="sethu"
-              data-aos="fade-down"
+            Hi, I'm<br /><span class="sethu">Sethubharathi</span>
+            <!--  <p>data-aos="fade-down"
               data-aos-delay="1000"
-              data-aos-duration="500"
-              >Sethubharathi</span
-            >
+              data-aos-duration="500> -->
           </h2>
           <p
             class="job"
@@ -155,6 +172,7 @@
             data-aos="fade-down"
             data-aos-delay="1500"
             data-aos-duration="500"
+            data-aos-once="true"
           />
           <img
             class="star3"
@@ -174,10 +192,6 @@
             alt="Sethubharathi"
             srcset=""
             class="sethu-picture"
-            data-aos="fade-down"
-            data-aos-delay="100"
-            data-aos-duration="500"
-            data-aos-once="true"
           />
         </div>
       </section>
@@ -198,7 +212,7 @@
             About Me
           </h2>
           <br />
-          I'm Sethubharathi lorem ipsum donor Lorem ipsum dolor sit amet,
+          &emsp;I'm Sethubharathi lorem ipsum donor Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -222,7 +236,12 @@
 
         <div class="skill-container">
           <div class="skillrange">
-            <div class="skillelement" data-aos="fade-down" data-aos-duration="500" data-aos-once="true">
+            <div
+              class="skillelement"
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
               <img src="assets/flutter-skill.svg" height="80px" />
               <h2 class="skill-name">Flutter</h2>
             </div>
@@ -233,23 +252,26 @@
               data-aos-duration="400"
               data-aos-once="true"
             >
-              <img
-                src="assets/html-skill.svg"
-                height="80px"
-              />
+              <img src="assets/html-skill.svg" height="80px" />
               <h2 class="skill-name">HTML</h2>
             </div>
-            <div class="skillelement" data-aos="fade-down"
-            data-aos-delay="300"
-            data-aos-duration="400"
-            data-aos-once="true">
+            <div
+              class="skillelement"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-duration="400"
+              data-aos-once="true"
+            >
               <img src="assets/css3.svg" height="80px" alt="Sethubharathi" />
               <h2 class="skill-name">CSS</h2>
             </div>
-            <div class="skillelement" data-aos="fade-down"
-            data-aos-delay="450"
-            data-aos-duration="400"
-            data-aos-once="true">
+            <div
+              class="skillelement"
+              data-aos="fade-down"
+              data-aos-delay="450"
+              data-aos-duration="400"
+              data-aos-once="true"
+            >
               <img
                 src="assets/react-skill.svg"
                 height="80px"
@@ -257,17 +279,23 @@
               />
               <h2 class="skill-name">React</h2>
             </div>
-            <div class="skillelement" data-aos="fade-down"
-            data-aos-delay="600"
-            data-aos-duration="400"
-            data-aos-once="true">
+            <div
+              class="skillelement"
+              data-aos="fade-down"
+              data-aos-delay="600"
+              data-aos-duration="400"
+              data-aos-once="true"
+            >
               <img src="assets/figma.svg" height="80px" alt="Sethubharathi" />
               <h2 class="skill-name">Figma</h2>
             </div>
-            <div class="skillelement" data-aos="fade-down"
-            data-aos-delay="750"
-            data-aos-duration="400"
-            data-aos-once="true">
+            <div
+              class="skillelement"
+              data-aos="fade-down"
+              data-aos-delay="750"
+              data-aos-duration="400"
+              data-aos-once="true"
+            >
               <img
                 src="assets/javascript.svg"
                 height="80px"
@@ -275,17 +303,20 @@
               />
               <h2 class="skill-name">Javascript</h2>
             </div>
-            <div class="skillelement" data-aos="fade-down"
-            data-aos-delay="900"
-            data-aos-duration="400"
-            data-aos-once="true">
+            <div
+              class="skillelement"
+              data-aos="fade-down"
+              data-aos-delay="900"
+              data-aos-duration="400"
+              data-aos-once="true"
+            >
               <img src="assets/nodejs.svg" height="80px" alt="Sethubharathi" />
               <h2 class="skill-name">NodeJS</h2>
             </div>
           </div>
           <div class="main">
             <img
-            data-aos="fade-down"
+              data-aos="fade-down"
               data-aos-delay="200"
               data-aos-duration="400"
               data-aos-once="true"
@@ -294,7 +325,7 @@
               alt="Sethubharathi"
             />
 
-            <div class="item items2" style="animation-delay: -6s" >
+            <div class="item items2" style="animation-delay: -6s">
               <img
                 style="animation-delay: -6s"
                 height="60px"
@@ -331,11 +362,79 @@
           </div>
         </div>
       </section>
-      <section id="projects"></section>
+      <section id="projects">
+        <h2 class="heading2">Projects</h2>
+        <div class="card">
+          <div class="icon"></div>
+          <img
+            src="./assets/project1.webp"
+            alt="Sethu's Project"
+            srcset=""
+            class="project-image"
+          />
+          <div class="tooltip">
+            It is a landing page for us, A group of developers who wish to
+            collaborate projects with each other and to learn new things from
+            others.
+          </div>
+          <div class="tooltip2">
+            <a href="https://cit-developers-git-dev-cit-developers.vercel.app/"><i class="fa fa-github"></i></a>
+            <a href="https://cit-developers-git-dev-cit-developers.vercel.app/" target="_blank">
+              <img src="./assets/arrow-up-right-from-square-solid.svg" alt="" srcset="">
+            </a>
+            <p>> React</p>
+          </div>
+        </div>
+
+          <div class="card">
+            <div class="icon"></div>
+            <img
+              src="./assets/project2.webp"
+              alt="Sethu's Project"
+              srcset=""
+              class="project-image"
+            />
+            <div class="tooltip">
+              It is a landing page for us, A group of developers who wish to
+              collaborate projects with each other and to learn new things from
+              others.
+            </div>
+            <div class="tooltip2">
+              <a href="https://github.com/Sethu-bharathi/cryptera-website"><i class="fa fa-github"></i></a>
+              <a href="https://cryptera.web.app" target="_blank">
+                <img src="./assets/arrow-up-right-from-square-solid.svg" alt="" srcset="">
+              </a>
+              <p>> React</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon"></div>
+            <img defer
+              src="./assets/project3.webp"
+              alt="Sethu's Project"
+              srcset=""
+              class="project-image"
+            />
+            <div class="tooltip">
+              It is a landing page for us, A group of developers who wish to
+              collaborate projects with each other and to learn new things from
+              others.
+            </div>
+            <div class="tooltip2">
+              <a href="https://github.com/Sethu-bharathi/Krizenhackathon"><i class="fa fa-github"></i></a>
+              <a href="https://krizen-hackathon.herokuapp.com/" target="_blank">
+                <img src="./assets/arrow-up-right-from-square-solid.svg" alt="" srcset="">
+              </a>
+              <p>> React</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
 
       <footer id="contact-me">
         <ul>
-          <li >
+          <li>
             <a
               href="https://www.facebook.com/sethubharathi007"
               aria-label="facebook"
@@ -386,6 +485,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="js/aos.js"></script>
+  <script src="js/scroll-out.js"></script>
   <script>
     function showall() {
       setTimeout(() => {
@@ -393,7 +493,8 @@
         document.getElementById("loaded").style.display = "block";
         // AOS.init();
       }, 2000);
+      AOS.init();
     }
-    AOS.init();
+    ScrollOut({ targets: ".sethu" });
   </script>
 </html>
