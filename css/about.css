@@ -17,10 +17,37 @@
     align-self: flex-start;
     font-size: 33px;
 }
+/* .heading:after{
+    content: "";
+    height: 1px;
+    width: 80%;
+    position: absolute;
+    top:50%;
+    left:20%;
+    background-color: #d6a007;
+} */
 .about-mediv{
     padding:10px;
    font-size: 22px;
    color: var(--light-slate);
+}
+.about-mediv span{
+    position: relative;
+    color: #d6a007;
+}
+.about-mediv span:after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #d6a007;
+    bottom: 2px;
+    left: 0px;
+    transition: .4s;
+    transform: scaleX(0);
+}
+.about-mediv span:hover:after{
+    transform: scaleX(100%);
 }
 .lottie{
     height: 350px;

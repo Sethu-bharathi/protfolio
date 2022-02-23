@@ -44,7 +44,13 @@ for (let i = 0; i < anav.length; i++) {
     mobilenav.classList.toggle("active");
   })
 }
-let sethu=document.querySelector(".sethu");
-window.addEventListener("scroll",()=>{});
+
+
 function gotoSection(id){document.getElementById(id).scrollIntoView()}
 
+// for(var i=0;i<15;i++){
+//   const block=document.createElement("div");
+//   block.classList.add("block");
+//   document.querySelector(".actual-footer").appendChild(block);
+//   block.style.transform="translate(0,"+(Math.random(-100,10)*40-30)+"px)";
+// }

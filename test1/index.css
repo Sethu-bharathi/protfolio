@@ -1,0 +1,45 @@
+body{
+    height: 90vh;
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    background-color: rgb(8, 3, 37);
+}
+
+
+.wrapper{
+    width:250px;
+    height: auto;
+    background-color: #fff;
+    padding:30px;
+}
+
+.wrapper .input-data{
+    height:100%;
+    position: relative;
+}
+.wrapper .input-data input{
+    height: 40px;
+    width:100%;
+    outline: none;
+    border: solid 2px rgb(26, 5, 56);
+}
+.input-data .label1{
+    transition: .2s;    
+    position: absolute;
+    pointer-events: none;
+    bottom: 14px;
+    left:15px;
+    font-size: large;
+}
+.wrapper .input1:focus ~ .label1{
+    background-color: #fff;
+    font-size: medium;
+    bottom:35px;
+}
+.wrapper .input1:hover{
+    border: 2px solid rgb(115, 110, 134);
+}

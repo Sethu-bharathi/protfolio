@@ -7,6 +7,7 @@
   padding: 0 100px;
   margin: 20px 0;
 }
+
 .card {
   position: relative;
   display: flex;
@@ -50,7 +51,7 @@
 .tooltip {
   height: 100px;
   width: min(65vw, 500px);
-  background-color: rgba(17, 34, 64, 0.8);
+  background-color: rgba(17, 34, 64, 0.4);
   position: absolute;
   top: 5%;
   right: 0;
@@ -58,12 +59,32 @@
   border-radius: 5px;
   transform: translateX(min(64vw, 510px));
   box-shadow: 2px 2px 6px black;
-  display: flex;
   padding: 20px 20px 0px min(5%, 50px);
   color: var(--lightest-slate);
   font-size: 18px;
+  line-height: 2.5ch;
 }
-
+.tooltip span{
+  display: inline-block;
+  position: relative;
+  color: rgba(214, 173, 60, 0.9);
+}
+.tooltip span:after{
+  content: "";
+  height:.4px;
+  width: 100%;
+  position: absolute;
+  bottom:5px;
+  right:0;
+  transition:transform .3s ease-in;
+  transform-origin: bottom left;
+  transform: scaleX(0);
+  background-color: #d6a007;
+}
+.tooltip span:hover::after{
+  transform: scaleX(100%);
+  transform-origin: bottom left;
+}
 .tooltip2 {
   display: flex;
   justify-content: space-evenly;
@@ -72,8 +93,8 @@
   left: 10px;
   height: 50px;
   position: absolute;
-  background-color: rgba(17, 34, 64, 0.9);
-  width: max(200px,30%);
+  background-color: rgba(17, 34, 64, 0.6);
+  width: max(200px,35%);
   border-radius: 3px;
   box-shadow: 0 0 100px rgb(0, 0, 0);
   transition: 0.7s;
@@ -91,7 +112,9 @@
   font-size: 20px;
   color: #d6a007;
 }
-
+.card:hover{
+  cursor: pointer;
+}
 .card:hover .tooltip {
   transform: translateX(20px);
   overflow: visible;
@@ -99,13 +122,22 @@
 .card:hover .tooltip2 {
   transform: translateX(0px);
 }
+.card:hover .project-image,.card:hover .project-image1{
+  filter: blur(10px);
+}
 .project-image {
   margin-top: 20px;
   width: min(95%, 550px);
   height: auto;
 }
+.project-image1 {
+  margin-top: 20px;
+  width: min(80%, 400px);
+  object-fit: contain;
+}
 #contact-me {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
 }
 footer ul {
   background-color: #00233b;
@@ -173,7 +205,32 @@ footer ul li:nth-child(4) a::before {
 footer ul li:nth-child(5) a::before {
   background: rgba(0, 0, 0, 0.8);
 }
-
+.actual-footer{
+  margin-top:20px ;
+  align-self: center;
+  width: 98%;
+  height:auto;
+  background-color: #032e4b;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap ;
+}
+.footer-nav{
+  display: flex;
+  background-color: #032e4b;
+  flex-direction: column;
+  height:150px;
+  width:200px;
+  font-size: larger;
+  justify-content: space-evenly;
+}
+.block{
+  height:50px;
+  width:30px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px black;
+  background-color: #00233b;
+}
 @media screen and (max-width: 789px) {
   #projects {
     padding: 0;
@@ -184,7 +241,7 @@ footer ul li:nth-child(5) a::before {
     font-size: 15px;
     transform: translateX(0px);
   }
-  .project-image {
+  .project-image,.project-image1 {
     filter: blur(3px);
   }
   .tooltip2 {
@@ -197,7 +254,7 @@ footer ul li:nth-child(5) a::before {
   .card:hover .tooltip2 {
     transform: translateX(-100%);
   }
-  .card:hover .project-image {
+  .card:hover .project-image,.card:hover .project-image1 {
     filter: blur(0px);
   }
 
